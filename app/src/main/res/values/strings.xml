@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Ubook</string>
+    <string name="search_hint">Input word</string>
+</resources>

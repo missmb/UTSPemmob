@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_item"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="3dp">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imgBook"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/bookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgBook"
+        android:layout_alignEnd="@+id/imgBook"
+        android:layout_alignRight="@+id/imgBook"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Book name"
+        android:textAlignment="center"
+        android:textColor="#0e11d1"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/bookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookTitle"
+        android:layout_alignEnd="@+id/bookTitle"
+        android:layout_alignRight="@+id/bookTitle"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Author"
+        android:textAlignment="center"
+        android:textColor="#ce1309"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/bookDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="description"
+        android:textColor="#ce1309"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:layout_below="@+id/bookAuthor"
+        android:layout_alignRight="@+id/bookAuthor"
+        android:layout_alignEnd="@+id/bookAuthor"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"/>
+</RelativeLayout>

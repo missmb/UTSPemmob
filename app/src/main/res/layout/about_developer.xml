@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".about.AboutActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/nav_developes1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="About Developer"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ImageView
+        android:id="@+id/img_main"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/nav_developes1"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/profile2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nav_developes1" />
+
+    <TextView
+        android:id="@+id/dev1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_main"
+        android:layout_marginTop="20dp"
+        android:text="Mar'atul Bariroh"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/img_main"
+        tools:layout_editor_absoluteX="86dp" />
+
+    <TextView
+        android:id="@+id/nim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="18050974016"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/dev1"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@id/dev1"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+    </TableLayout>
+
+    <TableRow
+        android:id="@+id/tableRowBtn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nim"
+        tools:layout_editor_absoluteX="9dp">
+
+        <Button
+            android:id="@+id/btn_gmail"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:drawableTop="@drawable/gmail64"
+            android:gravity="center|center_horizontal"
+            android:text="Gmail"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_linkedin"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:drawableTop="@drawable/linkedin64"
+            android:gravity="center|center_horizontal"
+            android:text="Linkedin"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_github"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:drawableTop="@drawable/github64"
+            android:gravity="center|center_horizontal"
+            android:text="Github"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_instagram"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:drawableTop="@drawable/instagram64"
+            android:gravity="center|center_horizontal"
+            android:text="Insta"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

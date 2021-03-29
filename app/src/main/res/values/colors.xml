@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#AD0ACC</color>
+    <color name="colorPrimaryDark">#78048B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000000</color>
+    <color name="collapse_accent">#5D13DB</color>
+    <color name="three">#422424</color>
+    <color name="white">#ffffff</color>
+</resources>
